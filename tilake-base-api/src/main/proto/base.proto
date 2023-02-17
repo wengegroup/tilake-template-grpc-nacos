@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package com.wenge.tilake.metadata.message;
+
+option java_multiple_files = true;
+option java_package = "com.wenge.tilake.metadata.message";
+option java_outer_classname = "NewsInfoProto";
+
+service NewsInfoService {
+    rpc queryRequest (NewsInfoRequest) returns (NewsInfoReply) {}
+}
+
+message NewsInfoRequest {
+    string name = 1;
+    string title =2;
+}
+
+message NewsInfoReply {
+    bool result = 1;
+    string message = 2;
+}

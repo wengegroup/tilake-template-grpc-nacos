@@ -1,0 +1,17 @@
+grpc:
+  server:
+    port: 0
+  client:
+    GLOBAL:
+      negotiation-type: plaintext
+      enable-keep-alive: true
+      keep-alive-without-calls: true
+server:
+  port: 8989
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 172.16.10.19:8848
+  application:
+    name: tilake-data-web

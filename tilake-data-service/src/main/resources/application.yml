@@ -1,0 +1,12 @@
+grpc:
+  server:
+    port: 0
+server:
+  port: 7777
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 172.16.10.19:8848
+  application:
+    name: tilake-data-service

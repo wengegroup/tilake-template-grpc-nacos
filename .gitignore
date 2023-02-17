@@ -1,0 +1,4 @@
+# Project exclude paths
+/tilake-base-api/target/
+/tilake-data-service/target/
+/tilake-data-web/target/
